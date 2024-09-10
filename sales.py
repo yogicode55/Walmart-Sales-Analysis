@@ -12,7 +12,7 @@ from sklearn.ensemble import IsolationForest
 import base64
 import io
 
-df = pd.read_csv("D:/DA Datasets/Walmart_Sales.csv")
+df = pd.read_csv("Walmart_Sales.csv")
 
 df['Date'] = pd.to_datetime(df['Date'])
 
