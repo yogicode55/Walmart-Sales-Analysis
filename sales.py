@@ -14,7 +14,7 @@ import io
 
 df = pd.read_csv("Walmart_Sales.csv")
 
-df['Date'] = pd.to_datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y', errors='coerce')
 
 df['Year'] = df['Date'].dt.year
 df['Month'] = df['Date'].dt.month
